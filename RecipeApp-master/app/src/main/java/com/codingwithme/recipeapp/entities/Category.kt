@@ -11,7 +11,6 @@ data class Category(
     var id:Int,
 
     @ColumnInfo(name = "categoryItems")
-    @Expose
     @SerializedName("categories")
     @TypeConverters(CategoryListConverter::class)
     var categorieitems: List<CategoryItems>? = null
