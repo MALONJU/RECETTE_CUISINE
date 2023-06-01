@@ -68,7 +68,7 @@ class DetailActivity : BaseActivity() {
                 call: Call<MealResponse>,
                 response: Response<MealResponse>
             ) {
-
+//appelle les ingredient
                 Glide.with(this@DetailActivity).load(response.body()!!.mealsEntity[0].strmealthumb).into(imgItem as ImageView)
 
                 tvCategory.text = response.body()!!.mealsEntity[0].strmeal
