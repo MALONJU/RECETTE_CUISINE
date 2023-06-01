@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.item_rv_main_category.view.*
 
 class MainCategoryAdapter: RecyclerView.Adapter<MainCategoryAdapter.RecipeViewHolder>() {
 
-    var listener: OnItemClickListener? = null
+  var listener : OnItemClickListener? = null
     var ctx: Context? = null
     var arrMainCategory = ArrayList<CategoryItems>()
     class RecipeViewHolder(view: View): RecyclerView.ViewHolder(view){
